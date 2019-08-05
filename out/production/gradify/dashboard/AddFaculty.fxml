@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.AddFacultyController">
+   <children>
+      <Text layoutX="109.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Faculty" />
+      <Text layoutX="108.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Name" />
+      <Text layoutX="109.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Login ID" />
+      <Text layoutX="109.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <JFXTextField fx:id="facultyName" layoutX="245.0" layoutY="127.0" />
+      <JFXTextField fx:id="facultyLoginID" layoutX="245.0" layoutY="164.0" />
+      <JFXPasswordField fx:id="facultyPassword" layoutX="245.0" layoutY="229.0" />
+      <JFXButton fx:id="addFaculty" layoutX="473.0" layoutY="385.0" onAction="#addFaculty" text="Add Faculty" />
+      <JFXButton fx:id="dashboard" layoutX="622.0" layoutY="385.0" onAction="#Dashboard" text="Dashboard" />
+   </children>
+</AnchorPane>

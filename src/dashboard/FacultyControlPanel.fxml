@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.FacultyControlPanelController">
+   <children>
+      <Text layoutX="112.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Reg no." />
+      <Text layoutX="100.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Subject Code" />
+      <Pane layoutX="437.0" layoutY="190.0" prefHeight="281.0" prefWidth="327.0">
+         <children>
+            <Text layoutX="14.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg. No" />
+            <Text layoutX="186.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester" />
+            <Text layoutX="154.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marks" />
+            <Text layoutX="24.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mid Sem" />
+            <Text layoutX="24.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Sem" />
+            <Text layoutX="25.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Test" />
+            <Text layoutX="180.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance" />
+            <JFXTextField fx:id="textFeild4" layoutX="101.0" layoutY="129.0" prefHeight="26.0" prefWidth="82.0" />
+            <JFXTextField fx:id="textFeild5" layoutX="101.0" layoutY="160.0" prefHeight="26.0" prefWidth="82.0" />
+            <JFXTextField fx:id="textFeild6" layoutX="101.0" layoutY="189.0" prefHeight="26.0" prefWidth="62.0" />
+            <JFXTextField fx:id="textFeild7" layoutX="262.0" layoutY="190.0" prefHeight="26.0" prefWidth="51.0" />
+            <JFXButton fx:id="update" layoutX="219.0" layoutY="254.0" onAction="#updateMarks" text="UPDATE" />
+            <Text fx:id="stnm" layoutX="77.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="reg" layoutX="77.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="82.00000524520874" />
+            <Text fx:id="sm" layoutX="262.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="186.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Code" />
+            <Text fx:id="sc" layoutX="290.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="addTeacher" layoutX="583.0" layoutY="95.0" onAction="#AddTeacher" text="Add Teacher" />
+      <JFXButton fx:id="addSubject" layoutX="585.0" layoutY="135.0" onAction="#AddSubject" text="Add Subject" />
+      <JFXButton fx:id="findStudent" layoutX="175.0" layoutY="331.0" onAction="#populateStudent" text="Find Student" />
+      <JFXButton fx:id="logOut" layoutX="702.0" layoutY="34.0" onAction="#LogOut" text="Log Out" />
+      <JFXTextField fx:id="regnoToSearch" layoutX="237.0" layoutY="230.0" />
+      <JFXTextField fx:id="subcode" layoutX="237.0" layoutY="262.0" />
+      <JFXButton fx:id="astudent" layoutX="584.0" layoutY="60.0" onAction="#AddStudent" text="Add Student" />
+      <Text fx:id="wel" layoutX="96.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.7294921875" />
+   </children>
+</AnchorPane>

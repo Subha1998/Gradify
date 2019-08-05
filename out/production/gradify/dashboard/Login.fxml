@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.LoginController">
+   <children>
+      <JFXTextField fx:id="loginID" layoutX="551.0" layoutY="212.0" />
+      <JFXPasswordField fx:id="paasword" layoutX="551.0" layoutY="250.0" prefHeight="26.0" prefWidth="155.0" />
+      <JFXButton fx:id="submitButton" layoutX="542.0" layoutY="332.0" onAction="#login" text="Login" />
+      <Text layoutX="542.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Login" />
+      <Text layoutX="477.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LoginID" />
+      <JFXComboBox fx:id="semester" layoutX="173.0" layoutY="292.0" promptText="Semester" style="-jfx-label-float: true;" visibleRowCount="8" />
+      <JFXButton fx:id="viewResult" layoutX="180.0" layoutY="332.0" onAction="#viewResult" text="View Result" />
+      <Text layoutX="376.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gradify" />
+      <JFXTextField fx:id="regNo" alignment="CENTER" layoutX="150.0" layoutY="244.0" prefHeight="26.0" prefWidth="155.0" />
+      <Text layoutX="141.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Registration Number" />
+      <Text layoutX="178.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search a result" />
+      <Text layoutX="465.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+   </children>
+</AnchorPane>

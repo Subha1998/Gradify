@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.AddSubjectController">
+   <children>
+      <Text layoutX="230.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Name" />
+      <Text layoutX="277.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Code" />
+      <Text layoutX="272.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester" />
+      <Text layoutX="272.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch" />
+      <JFXTextField fx:id="subjectName" layoutX="355.0" layoutY="98.0" prefHeight="26.0" prefWidth="217.0" />
+      <JFXTextField fx:id="sujectCode" layoutX="401.0" layoutY="143.0" prefHeight="26.0" prefWidth="123.0" />
+      <JFXComboBox fx:id="batch" layoutX="396.0" layoutY="191.0" prefHeight="26.0" prefWidth="123.0" />
+      <JFXComboBox fx:id="semester" layoutX="396.0" layoutY="243.0" prefHeight="26.0" prefWidth="123.0" />
+      <JFXButton fx:id="addSubject" layoutX="319.0" layoutY="351.0" onAction="#addSubjectToBatch" text="Add Subject to Batch" />
+      <JFXButton fx:id="dashboard" layoutX="629.0" layoutY="415.0" onAction="#Dashboard" text="Dashboard" />
+      <Text layoutX="231.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Credits" />
+      <JFXTextField fx:id="credits" layoutX="367.0" layoutY="280.0" prefHeight="26.0" prefWidth="217.0" />
+   </children>
+</AnchorPane>
